@@ -5,11 +5,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int comparePQueueEntry(const PQueueEntry *e1, const PQueueEntry *e2) {
+int comparePQueueEntry(const PQueueEntry *e1, const PQueueEntry *e2, int *result) {
     if (e1->priority < e2->priority)
-        return -1;
-    if (e1->priority > e2->priority)
-        return 1;
+        *result = -1;
+    else if (e1->priority > e2->priority)
+        *result = 1;
+    else
+        *result = 0;
     return 0;
 }
 
@@ -17,7 +19,8 @@ int enqueue(PQueueNode **pqueue, int priority, void *data) {
     PQueueEntry *entry = malloc(sizeof(PQueueEntry));
     entry->priority = priority;
     entry->data = data;
-    return insertItem(pqueue, entry, (ComparisonFunction) comparePQueueEntry);
+    insertItem(pqueue, entry, (ComparisonFunction) comparePQueueEntry);
+    return 0;
 }
 
 void *dequeue(PQueueNode **pqueue) {
@@ -27,22 +30,21 @@ void *dequeue(PQueueNode **pqueue) {
     PQueueNode *head = *pqueue;
     PQueueNode *new_head = (*pqueue)->next;
     *pqueue = new_head;
-    return ((PQueueEntry *)head->data)->data;
+    return  ((PQueueEntry *)head->data)->data;
 }
-
 
 void *peek(PQueueNode *pqueue) {
     if (pqueue == NULL) {
         return NULL;
     }
-    return ((PQueueEntry *)pqueue->data)->data;
+    return  ((PQueueEntry *)pqueue->data)->data;
 }
 
 
 void printQueue(PQueueNode *pqueue, void (printFunction)(void*)) {
     PQueueNode *curr = pqueue;
     while (curr != NULL) {
-        printFunction(((PQueueEntry *)pqueue->data)->data);
+        printFunction(((PQueueEntry *)curr->data)->data);
         curr = curr->next;
     }
 }
