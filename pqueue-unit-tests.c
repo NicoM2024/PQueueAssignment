@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "thing.h"
-#include "list.jhibbele.h"
-#include "pqueue.jhibbele.h"
+#include "list.kschne11-nlmilazz.h"
+#include "pqueue.kschne11-nlmilazz.h"
 
 //--------------------------------------------------------------------------
 
