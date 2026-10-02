@@ -8,6 +8,7 @@
 #include "list.kschne11-nlmilazz.h"
 
 typedef ListNode PQueueNode;
+
 typedef struct {
     int priority;
     void *data;
