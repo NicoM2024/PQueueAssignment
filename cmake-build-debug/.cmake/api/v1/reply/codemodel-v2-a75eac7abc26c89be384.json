@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.30"
+						"string" : "3.30.5"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "PQueueAssignment.git",
+					"name" : "PQueueAssignment",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-cf9fca2a870998f9ff58.json",
-					"name" : "test",
+					"id" : "PQueueAssignment::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PQueueAssignment-Debug-3730a56e6c9531178ec4.json",
+					"name" : "PQueueAssignment",
 					"projectIndex" : 0
 				}
 			]

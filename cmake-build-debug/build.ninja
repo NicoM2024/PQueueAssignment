@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: PQueueAssignment.git
+# Project: PQueueAssignment
 # Configurations: Debug
 # =============================================================================
 
@@ -41,59 +41,59 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target test
+# Object build statements for EXECUTABLE target PQueueAssignment
 
 
 #############################################
-# Order-only phony target for test
+# Order-only phony target for PQueueAssignment
 
-build cmake_object_order_depends_target_test: phony || .
+build cmake_object_order_depends_target_PQueueAssignment: phony || .
 
-build CMakeFiles/test.dir/pqueue-unit-tests.c.obj: C_COMPILER__test_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/pqueue-unit-tests.c || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles\test.dir\pqueue-unit-tests.c.obj.d
+build CMakeFiles/PQueueAssignment.dir/pqueue-unit-tests.c.obj: C_COMPILER__PQueueAssignment_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/pqueue-unit-tests.c || cmake_object_order_depends_target_PQueueAssignment
+  DEP_FILE = CMakeFiles\PQueueAssignment.dir\pqueue-unit-tests.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/.
-  OBJECT_DIR = CMakeFiles\test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test.dir
+  OBJECT_DIR = CMakeFiles\PQueueAssignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\PQueueAssignment.dir
 
-build CMakeFiles/test.dir/list.kschne11-nlmilazz.c.obj: C_COMPILER__test_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/list.kschne11-nlmilazz.c || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles\test.dir\list.kschne11-nlmilazz.c.obj.d
+build CMakeFiles/PQueueAssignment.dir/thing.c.obj: C_COMPILER__PQueueAssignment_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/thing.c || cmake_object_order_depends_target_PQueueAssignment
+  DEP_FILE = CMakeFiles\PQueueAssignment.dir\thing.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/.
-  OBJECT_DIR = CMakeFiles\test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test.dir
+  OBJECT_DIR = CMakeFiles\PQueueAssignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\PQueueAssignment.dir
 
-build CMakeFiles/test.dir/thing.c.obj: C_COMPILER__test_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/thing.c || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles\test.dir\thing.c.obj.d
+build CMakeFiles/PQueueAssignment.dir/list.kschne11-nlmilazz.c.obj: C_COMPILER__PQueueAssignment_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/list.kschne11-nlmilazz.c || cmake_object_order_depends_target_PQueueAssignment
+  DEP_FILE = CMakeFiles\PQueueAssignment.dir\list.kschne11-nlmilazz.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/.
-  OBJECT_DIR = CMakeFiles\test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test.dir
+  OBJECT_DIR = CMakeFiles\PQueueAssignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\PQueueAssignment.dir
 
-build CMakeFiles/test.dir/pqueue.kschne11-nlmilazz.c.obj: C_COMPILER__test_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/pqueue.kschne11-nlmilazz.c || cmake_object_order_depends_target_test
-  DEP_FILE = CMakeFiles\test.dir\pqueue.kschne11-nlmilazz.c.obj.d
+build CMakeFiles/PQueueAssignment.dir/pqueue.kschne11-nlmilazz.c.obj: C_COMPILER__PQueueAssignment_unscanned_Debug C$:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/pqueue.kschne11-nlmilazz.c || cmake_object_order_depends_target_PQueueAssignment
+  DEP_FILE = CMakeFiles\PQueueAssignment.dir\pqueue.kschne11-nlmilazz.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/.
-  OBJECT_DIR = CMakeFiles\test.dir
-  OBJECT_FILE_DIR = CMakeFiles\test.dir
+  OBJECT_DIR = CMakeFiles\PQueueAssignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\PQueueAssignment.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target test
+# Link build statements for EXECUTABLE target PQueueAssignment
 
 
 #############################################
-# Link the executable test.exe
+# Link the executable PQueueAssignment.exe
 
-build test.exe: C_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/pqueue-unit-tests.c.obj CMakeFiles/test.dir/list.kschne11-nlmilazz.c.obj CMakeFiles/test.dir/thing.c.obj CMakeFiles/test.dir/pqueue.kschne11-nlmilazz.c.obj
+build PQueueAssignment.exe: C_EXECUTABLE_LINKER__PQueueAssignment_Debug CMakeFiles/PQueueAssignment.dir/pqueue-unit-tests.c.obj CMakeFiles/PQueueAssignment.dir/thing.c.obj CMakeFiles/PQueueAssignment.dir/list.kschne11-nlmilazz.c.obj CMakeFiles/PQueueAssignment.dir/pqueue.kschne11-nlmilazz.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\test.dir
+  OBJECT_DIR = CMakeFiles\PQueueAssignment.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = test.exe
-  TARGET_IMPLIB = libtest.dll.a
-  TARGET_PDB = test.exe.dbg
+  TARGET_FILE = PQueueAssignment.exe
+  TARGET_IMPLIB = libPQueueAssignment.dll.a
+  TARGET_PDB = PQueueAssignment.exe.dbg
 
 
 #############################################
@@ -121,7 +121,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build test: phony test.exe
+build PQueueAssignment: phony PQueueAssignment.exe
 
 # =============================================================================
 # Folder targets.
@@ -131,7 +131,7 @@ build test: phony test.exe
 #############################################
 # Folder: C:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/cmake-build-debug
 
-build all: phony test.exe
+build all: phony PQueueAssignment.exe
 
 # =============================================================================
 # Built-in targets

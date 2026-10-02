@@ -23,7 +23,7 @@ int insertItem(ListNode **theList, void *data, ComparisonFunction compare) {
     	int result = 0;
     	compare(newNode->data, currNode->data, &result);
 
-    	if (result != 1 || result != 0) {
+    	if (result == -1) {
     		break;
     	}
 
@@ -31,12 +31,11 @@ int insertItem(ListNode **theList, void *data, ComparisonFunction compare) {
         currNode = currNode->next;
     }
 
-	if (prevNode == NULL) {
-		newNode->next = *theList;
-		*theList = newNode;
-	} else {
+	newNode->next = currNode;
+	if (prevNode != NULL) {
 		prevNode->next = newNode;
-		newNode->next = currNode;
+	} else {
+		*theList = newNode;
 	}
 
     return 0;

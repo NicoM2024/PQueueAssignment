@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "PQueueAssignment.git"
+			"value" : "PQueueAssignment"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1151,6 +1151,42 @@
 		},
 		{
 			"name" : "PQueueAssignment.git_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment"
+		},
+		{
+			"name" : "PQueueAssignment_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/cmake-build-debug"
+		},
+		{
+			"name" : "PQueueAssignment_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "PQueueAssignment_SOURCE_DIR",
 			"properties" : 
 			[
 				{
