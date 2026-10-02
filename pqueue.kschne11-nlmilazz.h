@@ -5,11 +5,15 @@
 #ifndef PQUEUEASSIGNMENT_KSCHNE11_H
 #define PQUEUEASSIGNMENT_KSCHNE11_H
 
+#include "list.kschne11-nlmilazz.h"
+
 typedef ListNode PQueueNode;
 typedef struct {
     int priority;
     void *data;
 } PQueueEntry;
+
+int comparePQueueEntry(const PQueueEntry *e1, const PQueueEntry *e2);
 
 int enqueue(PQueueNode **pqueue, int priority, void *data);
 
