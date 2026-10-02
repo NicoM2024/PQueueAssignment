@@ -14,7 +14,7 @@ typedef struct {
     void *data;
 } PQueueEntry;
 
-int comparePQueueEntry(const PQueueEntry *e1, const PQueueEntry *e2);
+int comparePQueueEntry(const PQueueEntry *e1, const PQueueEntry *e2, int *result);
 
 int enqueue(PQueueNode **pqueue, int priority, void *data);
 

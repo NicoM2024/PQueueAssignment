@@ -23,7 +23,7 @@ int insertItem(ListNode **theList, void *data, ComparisonFunction compare) {
     	int result = 0;
     	compare(newNode->data, currNode->data, &result);
 
-    	if (result != 1 || result != 0) {
+    	if (result == -1) {
     		break;
     	}
 
