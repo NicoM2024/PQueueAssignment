@@ -47,7 +47,7 @@ int getMinPriority(PQueueNode *pqueue) {
     if (pqueue == NULL) {
         return -1;
     }
-    return pqueue->data->priority;
+    return ((PQueueEntry)pqueue->data).priority;
 }
 
 int queueLength(PQueueNode *pqueue) {
