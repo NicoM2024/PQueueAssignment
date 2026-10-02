@@ -14,7 +14,6 @@ int insertItem(ListNode **theList, void *data, ComparisonFunction compare) {
 
     ListNode *currNode = *theList;
     ListNode *prevNode = NULL;
-    int result = 0;
 	if (*theList == NULL) {
 		*theList = newNode;
 		return 0;
@@ -24,7 +23,7 @@ int insertItem(ListNode **theList, void *data, ComparisonFunction compare) {
     	int result = 0;
     	compare(newNode->data, currNode->data, &result);
 
-    	if (result != 1) {
+    	if (result != 1 || result != 0) {
     		break;
     	}
 
