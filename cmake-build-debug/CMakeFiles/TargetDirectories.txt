@@ -1,0 +1,3 @@
+C:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/nmila/Downloads/OperatingSystems/PQueueAssignment/cmake-build-debug/CMakeFiles/rebuild_cache.dir

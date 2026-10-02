@@ -5,8 +5,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "Book.kschne11.h"
-
 
 int insertItem(ListNode **theList, void *data, ComparisonFunction compare) {
     ListNode *newNode = malloc(sizeof(ListNode));
